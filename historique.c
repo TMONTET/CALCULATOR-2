@@ -5,8 +5,8 @@
 #include "historique.h"
 #include<stdio.h>
 #include<string.h>
-#include "main.h"
 
+/*
 int main(int argc, char *argv[])
 {
         FILE* f1=NULL;
@@ -21,3 +21,4 @@ int main(int argc, char *argv[])
         }
         return 0;
 }
+*/

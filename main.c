@@ -4,7 +4,7 @@
 #include "historique.h"
 
 int main() {
-    while(system("PAUSE"=='true')) {
+    while(1) {
 
         printf("aX^2 + b X + c \n");
 
@@ -45,7 +45,16 @@ int main() {
             printf("Il y a deux solutions, x1 = %lf et x2 = %lf \n", x1, x2);
         }
 
-
+        FILE* f1=NULL;
+        f1 = fopen("historique.csv", "a+");
+        if (f1!=NULL)
+        {
+            printf("oui\n");
+            fprintf(f1, "%d %d %d %lf %lf %lf\n", a, b, c, delta, x1, x2);
+            fclose(f1);
+        } else {
+            printf("non\n");
+        }
 
         system("PAUSE"); // Tant que l'utilisateur ne tape pas sur 'ENTER' le programme ne continue pas
     }

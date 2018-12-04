@@ -4,7 +4,6 @@
 
 #include "menu.h"
 #include <stdio.h>
-#include "main.c"
 #include "historique.h"
 
 
@@ -34,4 +33,4 @@ void load_menu(void)
 
     } while (choix != 3);
 
-}
+} */
