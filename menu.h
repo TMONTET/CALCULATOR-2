@@ -5,6 +5,6 @@
 #ifndef UNTITLED24_MENU_H
 #define UNTITLED24_MENU_H
 
-
+void menu(void);
 
 #endif //UNTITLED24_MENU_H

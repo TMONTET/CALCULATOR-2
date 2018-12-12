@@ -4,33 +4,30 @@
 
 #include "menu.h"
 #include <stdio.h>
+#include <fcntl.h>
+#include <stdlib.h>
 #include "historique.h"
 
 
-/*
 
-void load_menu(void)
+void menu(void)
 {
     int choix;
 
-    do
-    {
-        printf("MENU \n \n 1. Calculer les equations de second degree\n 2. historique \n 3. Quitter\n");
+        printf("\n\nMENU \n \n 1. Calculer les equations de second degree\n 2. historique \n 3. Quitter\n");
         scanf("%d",&choix);
 
         switch(choix)
         {
-            case 1: ();
+            case 1: printf("Entrer a, b et c afin de calculer les equations de second degree: \n \n");
                 break;
-            case 2: ();
+            case 2:historique2();
+                menu();
                 break;
             case 3: printf("Fermeture du programme\n");
-                exit(0);
-                break;
+                exit(EXIT_SUCCESS);
             default: printf("Entrer 1 , 2 ou 3 : \n");
+                menu();
                 break;
         }
-
-    } while (choix != 3);
-
-} */
+}
