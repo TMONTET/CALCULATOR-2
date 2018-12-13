@@ -9,5 +9,10 @@ void delta1();
 void delta2(int b, int a, double *x1, double delta);
 void delta3(double *x1,double *x2,double delta, int a, int b);
 
+struct Donnees{
+    int a, b, c;
+    double x1, x2, delta;
+};
+
 
 #endif //UNTITLED24_CALCUL_H

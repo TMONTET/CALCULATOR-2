@@ -7,6 +7,7 @@
 #include <math.h>
 
 
+
 void delta1(){
     printf("Il n'y a pas de solution \n");
 }

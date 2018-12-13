@@ -12,10 +12,11 @@
 
 void menu(void)
 {
-    int choix;
+    int choix, valide;
 
         printf("\n\nMENU \n \n 1. Calculer les equations de second degree\n 2. historique \n 3. Quitter\n");
-        scanf("%d",&choix);
+        valide = scanf("%d",&choix);
+        while (getchar () != '\n');
 
         switch(choix)
         {
@@ -26,7 +27,7 @@ void menu(void)
                 break;
             case 3: printf("Fermeture du programme\n");
                 exit(EXIT_SUCCESS);
-            default: printf("Entrer 1 , 2 ou 3 : \n");
+            default: printf("Erreur recommencer\n");
                 menu();
                 break;
         }
