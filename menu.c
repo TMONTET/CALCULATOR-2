@@ -12,11 +12,11 @@
 
 void menu(void)
 {
-    int choix, valide;
+    int choix;
 
         printf("\n\nMENU \n \n 1. Calculer les equations de second degree\n 2. historique \n 3. Quitter\n");
-        valide = scanf("%d",&choix);
-        while (getchar () != '\n');
+        scanf("%d",&choix);
+        while (getchar () != '\n'); // permet d'eviter d'avoir une boucle infinie si ce sont des lettres
 
         switch(choix)
         {

@@ -10,13 +10,14 @@ int historique1(int a, int b, int c, double x1, double x2, double delta) {
     FILE *f1 = NULL;
     f1 = fopen("historique.csv", "a+");
     if (f1 != NULL) {
-        printf("historique a jour\n");
+        printf("Historique a jour\n");
         fprintf(f1, "%d;%d;%d;%lf;%lf;%lf\n", a, b, c, delta, x1, x2);
         fclose(f1);
     } else {
-        printf("historique non trouvé\n");
+        printf("Historique non trouvé\n");
     }
 }
+
 
 int historique2() {
     int a, b, c;
